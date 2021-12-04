@@ -1,4 +1,12 @@
+.idea/
 target/
+reports/
+video/
+test-output/
+allure-results/
+.gradle/
+*.class
+*.iml
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
