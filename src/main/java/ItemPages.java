@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         }
 
         public void ClickBuyButton() {
+            Reports.log("Click Buy Button");
             driver.findElement(Locators.BUTTON_BUY).click();
 
         }

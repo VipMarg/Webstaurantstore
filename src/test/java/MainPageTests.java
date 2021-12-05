@@ -11,15 +11,15 @@ public class MainPageTests extends BaseUI {
     @Test
     public void testSearchOfItems() {
         mainPage.SearchOfItems();
-        List<WebElement> linksOfArticles = mainPage.collectAllNameOfItems();
-        System.out.println(linksOfArticles.size());
+        List<WebElement> linksOfItems = mainPage.collectAllNameOfItems();
+        System.out.println(linksOfItems.size());
 
-        for(int i = 0; i < linksOfArticles.size(); ++i) {
-            WebElement link = (WebElement)linksOfArticles.get(i);
+        for(int i = 0; i < linksOfItems.size(); ++i) {
+            WebElement link = (WebElement)linksOfItems.get(i);
             nameOfItems = link.getText().toLowerCase();
             System.out.println(nameOfItems);
             Assert.assertTrue(nameOfItems.contains("table"));
-            if (i == linksOfArticles.size() - 1) {
+            if (i == linksOfItems.size() - 1) {
                 System.out.println(i);
                 link.click();
                 itemPages.ClickBuyButton();

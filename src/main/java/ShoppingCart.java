@@ -14,7 +14,7 @@ public class ShoppingCart extends BaseActions {
         driver.findElement(Locators.ICON_REMOVE_ITEM).click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         Reports.log("Wait until message Empty Cart");
-        wait.until(ExpectedConditions.visibilityOf(this.driver.findElement(Locators.USER_MESSAGE_EMPTY_CART)));
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.USER_MESSAGE_EMPTY_CART)));
     }
 
 

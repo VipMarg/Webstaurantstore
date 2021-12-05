@@ -9,7 +9,7 @@ public class MainPage extends BaseActions {
         super(driver, wait);
     }
     public List<WebElement> collectAllNameOfItems() {
-        List<WebElement> linksOfItems = this.driver.findElements(Locators.NAME_OF_ITEMS);
+        List<WebElement> linksOfItems = driver.findElements(Locators.NAME_OF_ITEMS);
         return linksOfItems;
 
     }
